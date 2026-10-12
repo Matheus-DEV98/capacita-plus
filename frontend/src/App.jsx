@@ -18,6 +18,9 @@ export default function App() {
           <Route path="/inscricoes" element={<Inscricoes />} />
         </Routes>
       </main>
+      <footer className="rodape">
+        Capacita+ · Projeto Final do Programa Transforma Futuros · Desenvolvido por Matheus
+      </footer>
     </>
   )
 }
