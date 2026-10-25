@@ -86,3 +86,17 @@ inicial do código. Minha participação incluiu:
 - Personalização da interface e cadastro dos dados de teste;
 - Estudo do código gerado para compreender cada parte (banco, API Java e React);
 - Documentação e publicação no GitHub.
+
+
+## Atualização: nova identidade visual e página inicial
+
+Após a avaliação, foram feitas melhorias **apenas estéticas**, sem alterar as funcionalidades:
+
+- Identidade visual com logo e cores próprias (azul-marinho e laranja)
+- Página inicial explicando o problema, como usar o sistema e as ODS
+- Seção "Sobre nós" com foto e QR code para o repositório
+
+![Página inicial](docs/prints/home-topo.png)
+![O problema e como usar](docs/prints/home-problema.png)
+![Sobre nós](docs/prints/home-sobre.png)
+![Cursos com o novo visual](docs/prints/cursos-novo.png)

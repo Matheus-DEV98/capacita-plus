@@ -1,0 +1,6 @@
+Coloque nesta pasta as imagens da página inicial:
+
+  foto.jpg    -> sua foto (aparece na seção "Sobre nós")
+  qrcode.png  -> QR code com o link do repositório no GitHub
+
+Os nomes precisam ser exatamente esses, tudo em minúsculo.
