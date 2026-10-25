@@ -76,7 +76,7 @@ como Projeto Final do Programa Transforma Futuros.
 
 ### Uso de Inteligência Artificial
 
-Utilizei IA (Claude) como apoio no desenvolvimento, principalmente na geração da estrutura
+Utilizei IA (Claude),chatgpt e gemini como apoio no desenvolvimento, principalmente na geração da estrutura
 inicial do código. Minha participação incluiu:
 
 - Planejamento do projeto: ideia, problema, público-alvo, ODS e funcionalidades;
@@ -88,15 +88,30 @@ inicial do código. Minha participação incluiu:
 - Documentação e publicação no GitHub.
 
 
-## Atualização: nova identidade visual e página inicial
+## Evolução do projeto
 
-Após a avaliação, foram feitas melhorias **apenas estéticas**, sem alterar as funcionalidades:
+Após a avaliação, o projeto recebeu melhorias **apenas estéticas**, sem alterar
+nenhuma funcionalidade (backend, banco de dados e CRUDs continuam iguais).
 
-- Identidade visual com logo e cores próprias (azul-marinho e laranja)
+### Versão 1: entrega avaliada
+Interface simples com os três CRUDs funcionando (prints na seção "Telas do sistema").
+
+### Versão 2: identidade visual e página inicial
+- Logo e cores próprias (azul-marinho e laranja)
 - Página inicial explicando o problema, como usar o sistema e as ODS
 - Seção "Sobre nós" com foto e QR code para o repositório
 
-![Página inicial](docs/prints/home-topo.png)
-![O problema e como usar](docs/prints/home-problema.png)
-![Sobre nós](docs/prints/home-sobre.png)
-![Cursos com o novo visual](docs/prints/cursos-novo.png)
+![Página inicial v2](docs/prints/home-topo.png)
+![O problema e como usar v2](docs/prints/home-problema.png)
+![Sobre nós v2](docs/prints/home-sobre.png)
+![Cursos v2](docs/prints/cursos-novo.png)
+
+### Versão 3: mais cores e personalidade
+- Novas cores verde-água e amarelo-sol, combinando com a identidade
+- Cada seção com um fundo claro diferente, reduzindo as áreas brancas
+- Desenhos de fundo transparentes com ícones de estudo (livro, capelo, lápis, estrela)
+
+![Página inicial v3](docs/prints/v3-home-topo.png)
+![O problema e como usar v3](docs/prints/v3-home-problema.png)
+![Sobre nós v3](docs/prints/v3-home-sobre.png)
+![Cursos v3](docs/prints/v3-cursos.png)

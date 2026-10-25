@@ -8,6 +8,11 @@
   --primaria-clara: #dbe8f6;
   --destaque: #f28c28;         /* laranja: energia, crescimento, o "+" */
   --destaque-escuro: #c96a10;
+  --laranja-claro: #fff1e3;
+  --verde: #14a38b;            /* verde-água: crescimento, aprendizado */
+  --verde-claro: #e2f5f1;
+  --amarelo: #ffc845;          /* amarelo-sol: ideias, otimismo */
+  --amarelo-claro: #fff7df;
   --fundo: #f6f8fb;
   --superficie: #ffffff;
   --texto: #1c2733;
@@ -133,3 +138,52 @@ h1, h2, h3 { color: var(--primaria-escura); }
   .hero, .sobre { grid-template-columns: 1fr; justify-items: center; }
   .tabela { display: block; overflow-x: auto; }
 }
+
+/* ===== CORES EXTRAS E DESENHOS DE FUNDO =====
+   Desenhos de fundo: pequenos ícones de estudo (livro, capelo, lápis, estrela e o "+"
+   da marca) bem transparentes, repetidos como um papel de parede. Só decoração. */
+:root {
+  --desenhos: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='240' height='240'%3E%3Cg fill='none' stroke='%230a2f52' stroke-opacity='.07' stroke-width='3' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M22 30h16M30 22v16'/%3E%3Cpath d='M120 40q15-8 30 0v28q-15-8-30 0zM150 40q15-8 30 0v28q-15-8-30 0z'/%3E%3Cpath d='M30 140l30-12 30 12-30 12zM42 145v12q18 8 36 0v-12'/%3E%3Ccircle cx='205' cy='125' r='10'/%3E%3Cpath d='M130 215l40-40 8 8-40 40-10 2z'/%3E%3Cpath d='M206 200v14M199 207h14'/%3E%3Cpath d='M95 85l4 9 9 1-7 6 2 9-8-5-8 5 2-9-7-6 9-1z'/%3E%3C/g%3E%3C/svg%3E");
+  --desenhos-claros: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='240' height='240'%3E%3Cg fill='none' stroke='%23ffffff' stroke-opacity='.08' stroke-width='3' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M22 30h16M30 22v16'/%3E%3Cpath d='M120 40q15-8 30 0v28q-15-8-30 0zM150 40q15-8 30 0v28q-15-8-30 0z'/%3E%3Cpath d='M30 140l30-12 30 12-30 12zM42 145v12q18 8 36 0v-12'/%3E%3Ccircle cx='205' cy='125' r='10'/%3E%3Cpath d='M130 215l40-40 8 8-40 40-10 2z'/%3E%3Cpath d='M206 200v14M199 207h14'/%3E%3Cpath d='M95 85l4 9 9 1-7 6 2 9-8-5-8 5 2-9-7-6 9-1z'/%3E%3C/g%3E%3C/svg%3E");
+}
+
+/* Fundo das páginas de cadastro: creme com os desenhos */
+body { background: var(--desenhos), linear-gradient(180deg, var(--amarelo-claro), var(--verde-claro)) fixed; }
+
+/* Página inicial: cada seção com uma cor clara diferente */
+.hero { background: var(--desenhos), linear-gradient(135deg, var(--laranja-claro) 0%, var(--verde-claro) 100%); }
+.etiqueta { background: var(--verde); }
+main > .bloco:nth-of-type(2) { background: var(--amarelo-claro); }                    /* O problema */
+#como-usar { background: var(--desenhos), var(--verde-claro); }                      /* Como usar */
+main > .bloco:nth-of-type(4) { background: var(--desenhos), #eef2f8; }                /* ODS */
+#sobre { background: var(--desenhos), var(--laranja-claro); }                         /* Sobre nós */
+.chamada-final { background: var(--desenhos-claros), linear-gradient(135deg, var(--primaria-escura), var(--primaria)); }
+
+/* Cartões do problema: cada um com uma cor no topo */
+.card-info:nth-child(1) { border-top-color: var(--destaque); }
+.card-info:nth-child(2) { border-top-color: var(--verde); }
+.card-info:nth-child(3) { border-top-color: var(--amarelo); }
+
+/* Passos do "Como usar": cartão branco e número colorido */
+.passo { background: #fff; box-shadow: var(--sombra); }
+.passo:nth-child(1) .numero { background: var(--primaria); }
+.passo:nth-child(2) .numero { background: var(--verde); }
+.passo:nth-child(3) .numero { background: var(--destaque); }
+
+/* Sobre nós: QR code em cartão branco */
+.qrcode { background: #fff; box-shadow: var(--sombra); }
+
+/* Formulários: faixa colorida em degradê no topo */
+.formulario { border-top: none; background-image: linear-gradient(90deg, var(--primaria), var(--verde), var(--amarelo), var(--destaque));
+  background-size: 100% 5px; background-repeat: no-repeat; background-color: #fff; }
+
+/* Texto selecionado na cor da marca */
+::selection { background: var(--amarelo); color: var(--primaria-escura); }
+
+/* Coluna de ações da tabela alinhada com as outras */
+.acoes { display: table-cell; white-space: nowrap; }
+.acoes .botao + .botao { margin-left: 6px; }
+
+/* Rodapé sempre no fim da tela, mesmo em páginas curtas */
+#root { min-height: 100vh; display: flex; flex-direction: column; }
+main { flex: 1; }
